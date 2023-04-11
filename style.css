@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --blue: #0e5855;
+  --black: #333;
+  --white: #fff;
+  --light-color: #3f3b3b;
+  --light-bg: #eee;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+body {
+  background: #033834d0;
+}
+
+.container {
+  background: #ffff;
+  max-width: 800px;
+  margin: 60px auto;
+  height: 1800px;
+  padding: 20px;
+  box-shadow: 0 2px 20px rgba(255, 255, 255, 0.856);
+}
+.header {
+  text-align: center;
+}
+.header h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.header h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.img-area {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  border: 15px groove rgb(0, 124, 128);
+}
+
+.img-area img {
+  width: 100%;
+}
+
+.container .share a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin: 10px 0;
+  border-radius: 50%;
+  color: var(--black);
+  background-color: #d0d4d4;
+}
+
+.container .share a:hover {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 5px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 17px;
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--light-bg);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.container .information .about .title {
+  margin-bottom: 2px;
+  font-size: 17px;
+  line-height: 2;
+  padding-bottom: 10px;
+  color: var(--light-color);
+}
+
+.container .information .about p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  color: var(--light-color);
+}
+
+.container .information .about .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container .information {
+  flex: 1 1 1000px;
+  padding: 20px 30px;
+}
+
+.container .information .about .box-container .box {
+  flex: 1 1 250px;
+}
+.container .skills {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.container .skills .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container .skills .box-container .box {
+  flex: 1 1 300px;
+}
+
+.container .skills .box-container .box .progress h3 {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: var(--black);
+  font-size: 15px;
+}
+
+.container .skills .box-container .box .progress h3 span {
+  color: var(--light-color);
+}
+
+.container .skills .box-container .box .progress .bar {
+  overflow: hidden;
+  border-radius: 50px;
+  height: 10px;
+  background: var(--light-bg);
+}
+
+.container .skills .box-container .box .progress .bar span {
+  background: var(--blue);
+  height: 100%;
+  display: block;
+  border-radius: 50px;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:first-child
+  .progress:nth-child(1)
+  .bar
+  span {
+  width: 95%;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:first-child
+  .progress:nth-child(2)
+  .bar
+  span {
+  width: 80%;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:first-child
+  .progress:nth-child(3)
+  .bar
+  span {
+  width: 65%;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:first-child
+  .progress:nth-child(4)
+  .bar
+  span {
+  width: 70%;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:last-child
+  .progress:nth-child(1)
+  .bar
+  span {
+  width: 90%;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:last-child
+  .progress:nth-child(2)
+  .bar
+  span {
+  width: 75%;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:last-child
+  .progress:nth-child(3)
+  .bar
+  span {
+  width: 65%;
+}
+
+.container
+  .information
+  .skills
+  .box-container
+  .box:last-child
+  .progress:nth-child(4)
+  .bar
+  span {
+  width: 70%;
+}
+
+.container .experience {
+  margin: 20px 0;
+  padding: 30px;
+  padding-right: 30px;
+}
+
+.container .experience .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container .experience .box-container .box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 350px;
+  background: var(--light-bg);
+}
+
+.container .experience .box-container .box span {
+  color: var(--blue);
+  font-size: 15px;
+}
+
+.container .experience .box-container .box h3,
+h6 {
+  color: var(--blue);
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.container .experience .box-container .box p {
+  color: var(--light-color);
+  line-height: 2;
+  font-size: 13px;
+}
+
+.container .contact .box-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.container .contact .box-container .box {
+  flex: 1 1 200px;
+  display: flex;
+  align-self: flex-start;
+  gap: 10px;
+}
+
+.container .contact .title {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container .contact .box-container .box i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+}
+
+.container .contact .box-container .box p {
+  font-size: 11px;
+  color: var(--light-color);
+  line-height: 2;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-flow: column;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .container .profile {
+    position: static;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    border-right: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .container .information {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+  }
+
+  .container .box-container .box .contact {
+    color: var(--white);
+  }
+}
+
+@media (max-width: 450px) {
+  .container .profile {
+    width: 100%;
+  }
+
+  .container .profile .btn {
+    width: 100%;
+  }
+
+  .container .information .about p {
+    font-size: 12px;
+  }
+  .container .box-container .box .contact {
+    color: var(--white);
+  }
+  .container .information .experience .box-container .box p {
+    font-size: 12px;
+  }
+}
